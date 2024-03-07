@@ -25,8 +25,14 @@ jobs:
         run: |
           pip install notebook
           pip install nbconvert
-          pip install package1 package2  # Add any additional packages here
-
+          pip install numpy
+          pip install pandas
+          pip install imblearn
+          pip install seaborn
+          pip install matplotlib
+          pip install scikit-learn
+          pip install collection
+          
       - name: Run Jupyter Notebook
         run: |
           jupyter nbconvert --to notebook --execute Credit_Card_Fraud_Detection.ipynb --output executed_notebook.ipynb
